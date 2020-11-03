@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+    var user = {
+        "username": "hahah",
+        "password": "123456"
+    };
+
+    $.ajax({
+        url:"/testssm/user2",
+        type: "POST",
+        async: true,
+        contentType: "application/json;charset=UTF-8", //使用 application/json;charset=UTF-8
+        data: JSON.stringify(user), //将JSON对象转换为JSON字符串
+        dataType: 'json',
+        success: function (data) {
+
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.dao.RegisterMapper"><!--dao或mapper包层接口的位置位置-->
+    <!--这里记得id名字要和mapper名字一致-->
+    <!--增-->
+<!--    <insert id="addbook" parameterType="Books">-->
+<!--        insert into ssmbulid.books (name, counts, detail) values (#{name},#{counts},#{detail});-->
+<!--    </insert>-->
+<!--    &lt;!&ndash;删&ndash;&gt;-->
+<!--    <delete id="deletBook" parameterType="id">-->
+<!--        delete from ssmbulid.books where id =#{id};-->
+<!--    </delete>-->
+<!--    &lt;!&ndash;改&ndash;&gt;-->
+<!--    <update id="updateBook" parameterType="Books">-->
+<!--        update ssmbulid.books set books.name =#{name},books.counts=#{counts},books.detail=#{detail} where id=#{id};-->
+<!--    </update>-->
+<!--    &lt;!&ndash;查一本书&ndash;&gt;-->
+<!--    <select id="selectOneBook" parameterType="int" resultType="Books">-->
+<!--        select * from where id=#{id};-->
+<!--    </select>-->
+    <!--查所有人-->
+    <select id="register"  resultType="Register">
+        select  * from  register where  username =#{username} and password =#{password}
+    </select>
+
+
+</mapper>
